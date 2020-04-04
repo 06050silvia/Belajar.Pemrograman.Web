@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		
+		<!-- My CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Date Picker -->
+		<link rel="stylesheet" type="text/css" href="datepicker/css/datepicker.css">
+		<script src="datepicker/tests/assets/jquery-1.7.1.min.js"></script>
+		<script src="datepicker/js/bootstrap-datepicker.js"></script>
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script>
+		$(function () {
+			$('#datepicker').datepicker({ autoclose: true });
+			});
+		</script>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		<title> Perpustakaan Digital Ku </title>
+	
+	<style>
+	body, html {
+		height: 100%;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+
+	.bg-img {
+	/* The image used */
+		background-image: url("bg2.jpg");
+		min-height: 1250px;
+
+	/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	/* Add styles to the form container */
+	.formcontainer {
+		position: absolute;
+		margin: 50px;
+		max-width: 500px;
+		padding: 16px;
+		background-color: white;
+	}
+
+	/* Full-width input fields */
+	input[type=text] {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		border: none;
+		background: #f1f1f1;
+	}
+
+	input[type=text]:focus {
+		background-color: #ddd;
+		outline: none;
+	}
+
+	.btn:hover {
+		opacity: 1;
+	}
+	
+	.table {
+		width:92%;
+	}
+	
+	</style>
+	</head>
+	<body>
+	
+	<!-- Form on Image -->
+	<div class="bg-img">
+		<form action="/action_page.php" class="formcontainer">
+		<h1> Form Pendaftaran </h1>
+    
+		<label for="nama"><b> Nama Lengkap </b></label>
+		<input type="text" placeholder="masukan nama" name="nama" required>
+		
+		<label for="tempat"><b> Tempat Lahir </b></label>
+		<input type="text" placeholder="masukan kota" name="tempat" required>
+		
+		<div class="form-group">
+		<label for="tanggal"><b> Tanggal Lahir </b></label>
+		<input type="text" id="datepicker" class="form-control" placeholder="masukan tanggal" required>
+		</div>
+		
+		<label for="jkelamin"><b> Jenis Kelamin </b></label><br>
+		<div class="form-check-inline">
+			<label class="form-check-label" for="radio1">
+				<input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+				Laki-Laki
+			</label>
+		</div>
+		<div class="form-check-inline">
+			<label class="form-check-label" for="radio2">
+				<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+				Perempuan
+			</label>
+		</div>
+		<br> <br>
+
+		<label for="alamat"><b> Alamat </b></label>
+		<textarea class="form-control" rows="5" id="alamat" name="text"></textarea>
+		<br>
+		
+		<label for="status"><b> Status </b></label>
+		<select class="form-control" id="sel2" name="sellist2">
+        <option> Umum </option>
+        <option> Pelajar (SD/SMP/SMA) </option>
+        <option> Mahasiswa </option>
+        <option> Pekerja </option>
+		</select>
+		<br>
+		
+		<label for="kontak"><b> Nomor Kontak (Aktif) </b></label>
+		<input type="text" placeholder="masukan nomor" name="kontak" required>
+		
+		<label for="email"><b> Alamat E-mail (Aktif) </b></label>
+		<input type="text" placeholder="masukan alamat" name="email" required>
+		
+		<label for="status"><b> Unggah Foto Identitas Diri </b></label><br>
+		<div class="form-group">
+			<input type="file" class="form-control-file border" name="file">
+		</div>
+
+		<button type="submit" class="btn btn-primary"> Selesai </button>
+		<button onclick="window.location.href='home.html';"> Kembali </button>
+		</form>
+	</div>
+	
+	</body>
+</html>
